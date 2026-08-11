@@ -34,3 +34,13 @@ src/
 - Update your projects in `src/data/projects.js`
 - Update contact links in `src/components/Contact.jsx`
 - Colors and fonts are defined as CSS variables (`@theme`) in `src/index.css`
+
+## After deploying
+
+- **Live URL:** https://youssefhassan-portfolio.vercel.app/ — already set as the
+  canonical URL, OG/Twitter image, and JSON-LD `url` throughout `index.html`,
+  `public/robots.txt`, and `public/sitemap.xml`. If you ever change the
+  Vercel domain again, update those files the same way.
+- **Analytics** — This project includes `@vercel/analytics`, which is a
+  no-op until deployed on Vercel. Go to your project on the Vercel
+  dashboard → **Analytics** tab → **Enable**. No code changes needed.

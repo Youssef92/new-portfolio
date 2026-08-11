@@ -68,11 +68,8 @@ export default function Contact() {
   };
 
   return (
-    <section
-      id="contact"
-      className="relative py-28 md:py-36 bg-noise overflow-hidden"
-    >
-      <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-100 w-150 rounded-full bg-accent/10 blur-[140px]" />
+    <section id="contact" className="relative py-28 md:py-36 bg-noise overflow-hidden">
+      <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-[400px] w-[600px] rounded-full bg-accent/10 blur-[140px]" />
 
       <div className="relative max-w-6xl mx-auto px-6 md:px-8 text-center">
         <motion.p
@@ -112,9 +109,7 @@ export default function Contact() {
                 href={c.href}
                 target={c.external ? "_blank" : undefined}
                 rel={c.external ? "noopener noreferrer" : undefined}
-                onClick={
-                  c.copyable ? (e) => handleCopyableClick(e, c) : undefined
-                }
+                onClick={c.copyable ? (e) => handleCopyableClick(e, c) : undefined}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -123,7 +118,7 @@ export default function Contact() {
               >
                 <div className="flex items-center gap-4 min-w-0">
                   <span className="flex items-center justify-center h-10 w-10 rounded-full bg-surface-2 text-accent-2 shrink-0">
-                    <c.icon className="h-4.5 w-4.5" />
+                    <c.icon className="h-[18px] w-[18px]" />
                   </span>
                   <div className="min-w-0">
                     <p className="font-mono text-xs text-muted">
@@ -170,8 +165,8 @@ export default function Contact() {
         </div>
 
         <p className="font-mono text-xs text-muted mt-6">
-          Tapping Email opens Gmail with my address ready to go — and copies it
-          to your clipboard too.
+          Tapping Email opens Gmail with my address ready to go — and copies
+          it to your clipboard too.
         </p>
       </div>
     </section>

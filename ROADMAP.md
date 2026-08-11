@@ -7,20 +7,20 @@
 
 ## 🔴 أولوية عالية — تأثير مباشر على فرص الشغل
 
-- [ ] **Education & Training section**
+- [x] **Education & Training section**
   إضافة قسم بعد About مباشرة يوضح: بكالوريوس علوم حاسب (كلية الحاسبات والمعلومات، جامعة طنطا)، وتدريب ITI في Frontend Development. نقطة مصداقية قوية لعميل بيدور على "خريج جديد بس شاطر".
 
-- [ ] **زرار Download CV (PDF)**
+- [x] **زرار Download CV (PDF)**
   زرار في الـ Navbar أو الـ Hero يحمّل نسخة PDF جاهزة من الـ CV. يحتاج ملف PDF مُجهّز مسبقًا (لينك تحميل ثابت أو ملف داخل `public/`).
 
-- [ ] **Open Graph preview image**
+- [x] **Open Graph preview image**
   صورة معاينة (1200×630px) تظهر لما اللينك يتبعت في واتساب/لينكدإن/Upwork chat. يحتاج تصميم صورة + إضافة meta tags (`og:image`, `og:title`, `og:description`) في `index.html`.
 
 ---
 
 ## 🟡 أولوية متوسطة — يقوي الانطباع العام
 
-- [ ] **Services section**
+- [x] **Services section**
   قسم يوضح بالظبط إيه اللي بتقدمه كخدمات (React App Development, API Integration, Forms & Auth Flows, Responsive UI...) — بيسهّل على العميل يفهم يطلب منك إيه.
 
 - [ ] **Case study أعمق لكل مشروع**
@@ -30,14 +30,14 @@
 
 ## 🟢 أولوية منخفضة — تحسينات تقنية
 
-- [ ] **Analytics بسيط**
-  إضافة Vercel Analytics أو Plausible لمعرفة عدد الزوار ومصدرهم.
+- [x] **Analytics بسيط**
+  تم إضافة `@vercel/analytics` — يتفعّل تلقائيًا بعد النشر على Vercel من تبويب Analytics في الداشبورد، من غير أي كود إضافي.
 
-- [ ] **Lazy loading للصور**
-  تحسين سرعة تحميل صور المشاريع، خصوصًا في الـ Lightbox.
+- [x] **Lazy loading للصور**
+  تم إضافة `loading="lazy"` و`decoding="async"` لصور كروت المشاريع. صور الـ Lightbox أصلاً بتتحمل عند الطلب بس (on-demand).
 
-- [ ] **SEO meta tags أوضح**
-  `description` مخصص لكل قسم، `sitemap.xml` بسيط، `robots.txt`.
+- [x] **SEO meta tags أوضح**
+  تمت إضافة: `robots.txt`, `sitemap.xml`, `canonical` link, `theme-color`, وJSON-LD structured data (schema.org Person). **الدومين الحقيقي (`youssefhassan-portfolio.vercel.app`) اتحدث في كل الملفات دي بالفعل.**
 
 ---
 
